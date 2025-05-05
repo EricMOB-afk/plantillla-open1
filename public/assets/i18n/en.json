@@ -1,0 +1,20 @@
+{
+  "city": {
+  "id": "id",
+  "name": "name",
+  "location": {
+    "latitude": "latitude",
+    "longitude": "longitude",
+    "city": "city",
+    "country": "country"
+    },
+  "company": "company"
+  },
+
+
+  "footer": {
+    "rights": "Copyright © 2025 {{ api }}, All rights reserved",
+    "intro": "Developed ",
+    "author": "by {{ team }} Team"
+  }
+}

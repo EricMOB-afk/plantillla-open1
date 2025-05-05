@@ -1,0 +1,22 @@
+<div class="city-list">
+  <div *ngFor="let city of cities" class="city-card">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ city.name }}</mat-card-title>
+        <mat-card-subtitle>{{ city.company.join(', ') }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ 'city.location.city' | translate }}: {{ city.location.city }}</p>
+        <p>{{ 'city.location.country' | translate }}: {{ city.location.country }}</p>
+        <p>{{ 'city.href' | translate }}: <a [href]="city.href">{{ city.href }}</a></p>
+        <p>{{ 'city.gbfs_href' | translate }}: <a [href]="city.gbfs_href">{{ city.gbfs_href }}</a></p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="footer-links">
+          <a [href]="city.href" target="_blank" rel="noopener noreferrer">{{ 'Go to Website' | translate }}</a>
+          <a [href]="'https://maps.google.com/?q=' + city.location.latitude + ',' + city.location.longitude" target="_blank" rel="noopener noreferrer">{{ 'View on Map' | translate }}</a>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

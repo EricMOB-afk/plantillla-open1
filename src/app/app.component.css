@@ -1,0 +1,23 @@
+html, body {
+  height: 100%; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+  margin: 0;
+}
+
+.app-container {
+  min-height: 100%; /* Asegura que el contenedor principal ocupe toda la altura */
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* Asegura que el footer no sea fijo */
+  margin-top: auto; /* Empuja el footer al final del contenedor */
+}
